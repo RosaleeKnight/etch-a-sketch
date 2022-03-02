@@ -16,7 +16,6 @@ body {
     justify-content: center;
     background-color: #29ad81;
 }
-
 section {
     height: 70%;
     width: 10%;
@@ -44,4 +43,72 @@ button:hover {
 
 button:active {
     background-color: #f3c018;
+}
+
+.container {
+    background-color: rgba(255, 255, 246);
+    height: 70%;
+    width: 40%;
+    display: grid;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+  }
+
+.divs {
+    border: rgba(92, 91, 91, 0.137) 1px solid;
+}
+
+@media (max-width:900px) {
+    .container {
+        height: 400px;
+        width: 400px;
+    }
+
+    section {
+        height: 400px;
+        width: 90px;
+    }
+
+    button {
+        font-size: small;
+        margin: 5px;
+        padding: 10px;
+    }
+}
+
+@media (max-width:400px) {
+    body {
+        height: 95vh;
+        display: grid;
+        grid-template-rows: 200px 1fr;
+        grid-template-areas: 'buttons'
+                                'container';
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        height: 300px;
+        width: 300px;
+    }
+  
+    section {
+        grid-area: buttons;
+        width: 300px;
+        height: 200px;
+        display: grid;
+        grid-template-rows: repeat(auto-fill , 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+  
+    button {
+        width: 200px;
+        font-size: small;
+        padding: 10px;
+        margin-top: 10px;
+        margin-right: 0;
+        padding: 10px;
+        margin-bottom: 0;
+    }
 }
