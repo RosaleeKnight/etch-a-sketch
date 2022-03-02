@@ -60,3 +60,24 @@ function creatingDivs(grid) {
         container.appendChild(divs);
     }
 }
+function setColor(color) {
+    const divs = document.querySelectorAll("div");
+    for (let i = 0; i < divs.length; i++) {
+        divs[i].addEventListener("mouseover", function (e) {
+            if (color == "black") {
+                e.target.style.backgroundColor = "black";
+            } else if (color == "rainbow") {
+                e.target.style.backgroundColor = randomColor();
+            } else {
+                e.target.style.backgroundColor = "rgba(255, 255, 246, 0.877)";
+            }
+        });
+    }
+}
+resetbtn.addEventListener("click", clear);
+function clear() {
+    const allDivs = document.querySelectorAll(".divs");
+    allDivs.forEach((allDivs) => {
+        allDivs.style.backgroundColor = "rgba(255, 255, 246, 0.877)";
+    });
+}
