@@ -6,7 +6,7 @@
 ![GitHub issues](https://img.shields.io/github/issues/RosaleeKnight/etch-a-sketch-clone)
 [![HitCount](https://hits.dwyl.com/RosaleeKnight/etch-a-sketch-clone.svg?style=flat)](http://hits.dwyl.com/RosaleeKnight/etch-a-sketch-clone)
 
-# 🎮 Etch A Sketch
+# 🎮 Etch A Sketch Clone
 In this project for the Odin Project I created a blend between a sketchpad and a etch a sketch using javascript and a css grid. I created buttons for the classic black, eraser and reset as well as a rainbow colour as a feature. I needed to make the grid resizable with a hover effect over the grid and buttons. This project helped me practice using grids to implement interactive features.
 
 -----
